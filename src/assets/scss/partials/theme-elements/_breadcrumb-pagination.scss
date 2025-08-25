@@ -1,0 +1,63 @@
+/**  =====================
+      Breadcrumbs & Pagination css start
+==========================  **/
+/* Breadcrumbs */
+
+.breadcrumb {
+  background-color: $theme-background;
+  border-radius: 0;
+}
+
+.breadcrumb-item {
+  > a {
+    color: #505d69;
+  }
+  + .breadcrumb-item {
+    color: $primary-color;
+  }
+
+  &.active {
+    color: #74788d;
+    a {
+      color: #74788d;
+    }
+  }
+}
+
+/* pagination */
+
+.page-item {
+  &.active .page-link {
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.bread-crumb-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+
+  .page-header-title {
+    h5 {
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $theme-heading-color;
+      margin-bottom: 0;
+    }
+  }
+  ul.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0rem;
+  }
+}
+
+.page-header-title + .breadcrumb > .breadcrumb-item:last-child a {
+  color: #748d8a;
+  font-weight: 400;
+}
+/**====== Breadcrumbs & Pagination css end ======**/

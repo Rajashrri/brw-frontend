@@ -1,0 +1,135 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 24px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.disabled {
+    opacity: 0.7;
+  }
+}
+
+/* =======================   Pills ================== */
+
+.nav-pills {
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+  .nav-link {
+    border-radius: 5px;
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    color: #fff;
+    background: $primary-color;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* ======================== Tabs =============================== */
+
+.nav-tabs {
+  border-bottom: none;
+  .nav-link {
+    border: none;
+    color: $theme-font-color;
+    &:hover {
+      color: $primary-color;
+    }
+
+    &.disabled {
+      opacity: 0.7;
+    }
+  }
+
+  .nav-item.show .nav-link,
+  .nav-link.active {
+    border: none;
+    color: $theme-heading-color;
+    box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Tabbable tabs */
+
+/* Hide tabbable panes to start, show them when `.active` */
+
+.tab-content {
+  padding: 35px 30px;
+  background: #fff;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+
+  > .tab-pane {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}
+.waves-effect-1 {
+  .dropdown {
+    .dropdown-menu {
+      position: absolute;
+      top: 95% !important;
+    }
+  }
+  .show {
+    .dropdown-menu {
+      -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+      // -webkit-animation-name: DropDownSlide;
+      animation-name: DropDownSlide;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      margin: 0;
+      position: absolute;
+      z-index: 1000;
+    }
+  }
+}
+@keyframes DropDownSlide {
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  0% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+#navbar-right {
+  gap: 0px;
+  .dropdown {
+    .dropdown-toggle {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .waves-effect-1 {
+    padding: 0 !important ;
+    .dropdown {
+      .dropdown-toggle {
+        padding: 0.47rem 0.75rem;
+      }
+    }
+  }
+}
+#m-search {
+  width: 150px;
+}

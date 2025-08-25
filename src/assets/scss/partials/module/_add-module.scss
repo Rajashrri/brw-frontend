@@ -1,0 +1,387 @@
+.add-module {
+  .data_tableHeader {
+    .form-control {
+      height: auto;
+      // padding: 0.27rem 0.55rem;
+    }
+    .search-input {
+      // width: 55% !important;
+      .pg-er {
+        position: absolute;
+        font-size: 12px;
+      }
+    }
+
+    #main-search {
+      .input-group {
+        display: flex;
+        align-items: center;
+        padding: 5px 5px 5px 15px;
+        border: none;
+        height: 38px;
+        padding-right: 39px;
+        background-color: #f1f5f7 !important;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-radius: 10px;
+        align-content: center;
+        border: 0 !important;
+
+        .form-control {
+          background-color: #f1f5f7;
+        }
+        .input-group-text {
+          padding-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.module-list h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.list-module-preview .module-list .module-switch .switch-label {
+  padding: 0;
+  background: none;
+  text-align: center;
+  border: 0;
+}
+
+.thumb {
+  cursor: pointer;
+  background: #f3f3f3;
+  color: #3f4254;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 50px;
+  margin: 0px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #bbf4d7;
+  color: #0ea458;
+
+  &.down {
+    background: #f4bbbb;
+    color: #a40e0e;
+  }
+}
+
+.list-module-preview {
+  .form-check-input {
+    margin-top: 0;
+  }
+}
+
+.delete-modal {
+  .modal-header {
+    border: 0;
+    padding: 0;
+  }
+  .btn-close {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 13px;
+    z-index: 6;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 70%;
+    }
+    h3 {
+      font-size: 25px;
+      font-weight: 500;
+      text-align: center;
+      width: 60%;
+      margin: auto;
+      margin-bottom: 25px;
+      margin-top: 15px;
+    }
+    .buttons {
+      display: flex;
+      gap: 25px;
+      margin-top: 28px;
+      margin-bottom: 15px;
+      button {
+        border: 0;
+        background: $primary-color;
+        border-radius: 2px;
+        color: #fff;
+        padding: 10px 20px;
+        &.button-delete {
+          background: #f74f63;
+        }
+        // &.button-cancel {
+        //   background: #f74f63;
+        // }
+      }
+    }
+  }
+}
+
+.css-1thsgv7-control {
+  border-width: 1px !important;
+  box-shadow: none !important;
+  min-height: auto !important;
+  border-color: #cccccc !important;
+}
+
+.css-15lsz6c-indicatorContainer {
+  padding: 0 8px !important;
+  color: #cccccc !important;
+}
+
+// Date Picker
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.react-datepicker__header {
+  background-color: #f0faf9 !important;
+  border-bottom: 1px solid #1a776f !important;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  background-color: $primary-color !important;
+}
+
+.react-datepicker {
+  border-color: $primary-color !important;
+}
+
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow,
+.react-datepicker__navigation-icon::before {
+  border-color: #c3d6d4 !important;
+  border-style: solid !important;
+  border-width: 2px 2px 0 0 !important;
+}
+
+.react-datepicker__day:not([aria-disabled="true"]):hover,
+.react-datepicker__month-text:not([aria-disabled="true"]):hover,
+.react-datepicker__quarter-text:not([aria-disabled="true"]):hover,
+.react-datepicker__year-text:not([aria-disabled="true"]):hover {
+  border-radius: 0.3rem !important;
+  background-color: rgb(26 119 111) !important;
+  color: #fff !important;
+}
+
+// Date Picker
+
+.ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable:focus,
+.ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners:focus {
+  border-color: $primary-color !important;
+}
+
+// React Select
+.css-tr4s17-option {
+  background-color: #1a776f !important;
+}
+
+.css-d7l1ni-option {
+  background-color: #f0faf9 !important;
+}
+
+.back-button {
+  background: transparent;
+  color: $primary-color;
+  font-weight: 500;
+  border: 0;
+  padding: 0;
+  font-size: 15px;
+
+  &:hover {
+    background: none;
+    color: $primary-color;
+  }
+
+  svg {
+    font-size: 20px;
+  }
+}
+// React Select
+
+.other-icon-modal {
+  .modal-content {
+    border: 0;
+  }
+  .modal-header {
+    border: 0;
+    padding: 0;
+    .btn-close {
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      font-size: 13px;
+      z-index: 6;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  .modal-body {
+    padding: 25px;
+    padding-bottom: 30px;
+    h3 {
+      font-size: 25px;
+      font-weight: 500;
+      text-align: center;
+      width: 60%;
+      margin: auto;
+      margin-bottom: 25px;
+      margin-top: 15px;
+    }
+  }
+}
+
+// .css-19bb58m {
+//   display: none;
+// }
+
+.data_tableHeader {
+  .css-hlgwow {
+    display: flex;
+    height: 35px;
+
+    img {
+      position: relative;
+      z-index: 6;
+      filter: invert(1);
+    }
+  }
+
+  .css-qr46ko {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    div {
+      &[role="option"] {
+        position: relative;
+        // border-bottom: 1px solid #cecece;
+        // &::after {
+        //   content: "";
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   width: 42px;
+        //   height: 100%;
+        //   background: $primary-color;
+        // }
+        img {
+          position: relative;
+          z-index: 6;
+          filter: invert(1);
+        }
+        &:hover {
+          background: #f0faf9;
+        }
+      }
+      &[aria-selected="true"] {
+        // background: $primary-color;
+        background: $primary-color;
+        position: relative;
+        color: #fff;
+        img {
+          position: relative;
+          z-index: 6;
+          filter: invert(0);
+        }
+
+        &:hover {
+          background: $primary-color;
+          position: relative;
+          color: #fff;
+          img {
+            filter: invert(0);
+          }
+        }
+
+        // &::after {
+        //   content: "";
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   width: 42px;
+        //   height: 100%;
+        //   background: $primary-color;
+        // }
+      }
+    }
+  }
+}
+
+.css-t3ipsp-control,
+.css-13cymwt-control {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+
+  // .css-1cfo1cf,
+  // .css-1jqq78o-placeholder {
+  //   padding-left: 40px;
+  // }
+  .css-19bb58m {
+    position: absolute;
+    top: 45%;
+    // left: 50px;
+    transform: translateY(-50%);
+  }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 42px;
+  //   height: 100%;
+  //   background: $primary-color;
+  // }
+}
+
+// .css-13cymwt-control {
+//   &::after {
+//     content: "\e8bd";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 42px;
+//     height: 100%;
+//     background: $primary-color;
+//     font-family: "feather" !important;
+//     speak: none;
+//     font-size: 18px;
+//     color: #f7f7f7;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-variant: normal;
+//     text-transform: none;
+//     line-height: 1;
+//     -webkit-font-smoothing: antialiased;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// }

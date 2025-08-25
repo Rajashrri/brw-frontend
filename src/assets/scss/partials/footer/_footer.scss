@@ -1,0 +1,16 @@
+.footer {
+  padding: 20px 24px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0px;
+  // left: 240px;
+  color: #74788d;
+  height: 60px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  a {
+    color: $primary-color;
+  }
+}

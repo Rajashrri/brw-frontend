@@ -1,0 +1,54 @@
+/**======================================================================
+=========================================================================
+
+=================================================================================
+=================================================================================== */
+@import "bootstrap/dist/css/bootstrap";
+// General theme contents
+@import "partials/variables";
+@import "partials/general";
+@import "partials/generic";
+@import "partials/mixins/function";
+
+// icon
+@import "partials/font/next-icon";
+@import "partials/font/feather";
+@import "partials/font/fontawesome";
+
+// important Element
+@import "partials/menu/menu-lite";
+@import "partials/widget/widget";
+
+// Theme Element
+@import "partials/theme-elements/form";
+@import "partials/theme-elements/radiobox-checkbox";
+@import "partials/theme-elements/labels-badges";
+@import "partials/theme-elements/data-tables";
+@import "partials/theme-elements/authentication";
+@import "partials/theme-elements/button";
+@import "partials/theme-elements/breadcrumb-pagination";
+@import "partials/theme-elements/progress";
+@import "partials/theme-elements/nav";
+
+// Other
+@import "partials/other/chat";
+
+@import "partials/third-party/third-party";
+
+// Company
+@import "./partials/company/company-list";
+
+// Profile
+@import "./partials/profile/profile";
+
+@import "./partials/domain/buydomain";
+
+// Footer
+@import "./partials/footer/footer";
+
+// Admin Module list
+@import "./partials/admin-templates/admin-module";
+
+// Module
+@import "./partials/module/add-module";
+@import "./partials/module/add-package";

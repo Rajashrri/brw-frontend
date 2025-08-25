@@ -1,0 +1,224 @@
+.admin-module-list {
+  margin-bottom: 70px;
+
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    label {
+      margin-bottom: 0;
+    }
+  }
+  .heading-texts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h4 {
+      font-size: 16px;
+      margin-bottom: 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    #main-search.open-search {
+      width: 25%;
+    }
+  }
+  .accordion {
+    .accordion-item {
+      margin-bottom: 20px;
+      border: 0;
+      border-left: 2px solid #1a776f;
+      overflow: hidden;
+      border-radius: 5px !important;
+
+      .switch-container {
+        margin-bottom: 0;
+        .switch {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .accordion-button {
+      background: #f5f7f7;
+      border-radius: 2px !important;
+      color: #455251;
+      font-weight: 500;
+      text-transform: capitalize;
+      box-shadow: none;
+
+      &[aria-expanded="true"] {
+        // background: $primary-color;
+        color: $primary-color;
+      }
+
+      &::after {
+        background-size: 15px;
+      }
+    }
+    .accordion-body {
+      // border-top: 1px solid #d8e5e4;
+    }
+  }
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    display: none;
+
+    &:checked ~ label {
+      background: $primary-color;
+
+      &::after {
+        translate: 25px 0;
+        background: #fff;
+        right: 2px;
+        top: 2px;
+      }
+    }
+  }
+  label {
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    background: #d1d1d1;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 0;
+    transition: 0.3s;
+
+    &::after {
+      content: "";
+      display: inherit;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #ffffff;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      transition: 0.3s;
+    }
+  }
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  .switch {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span {
+      text-align: center;
+      &:nth-child(1) {
+        display: inline-block;
+        min-width: 80px;
+        font-size: 15px;
+        color: $dark-color;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.btn {
+  font-size: 14px;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.form-templates {
+  .toggle {
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
+  .form-check.form-check-inline {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    label {
+      margin-bottom: 0;
+    }
+  }
+  .form-check.form-check-reverse {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 7px;
+    flex-direction: row-reverse;
+    label {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// 30th October 2024
+
+.module-list {
+  h3 {
+    font-size: 1.5rem;
+  }
+  .checkboxes {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    // margin-top: 20px;
+    flex-wrap: wrap;
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      // .react-switch-bg {
+      //   height: 20px !important;
+      //   background: rgb(182 185 184) !important;
+      // }
+      // .react-switch-handle {
+      //   transform: translate(1px, -50%) !important;
+      //   top: 50% !important;
+      //   left: -4% !important;
+      //   background: rgb(229 236 235) !important;
+      // }
+    }
+  }
+}
+
+.switch-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.switch-label span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.switch-label.checked span {
+  color: rgb(26 119 111) !important; /* Color when checked */
+}
+
+.switch-label.unchecked span {
+  color: #666; /* Color when unchecked */
+}
+
+.custom-switch {
+  margin-left: 10px;
+}

@@ -1,0 +1,64 @@
+.my-profile {
+  .tab-wrapper {
+    padding: 25px;
+    .tabs {
+      .tab-button {
+        border: 0;
+        padding: 10px 25px;
+        outline: 0;
+        background: transparent;
+        position: relative;
+        border-bottom: 2px solid #dce7e7;
+
+        &::after {
+          content: '';
+          width: 0;
+          background: $primary-color;
+          position: absolute;
+          bottom: -2px;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 2px;
+          transition: 0.5s all ease;
+        }
+        &.true {
+          color: $primary-color;
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .tab-content {
+      box-shadow: none;
+      margin-top: 20px;
+      padding: 0px 20px;
+
+      label {
+        position: relative;
+        button {
+          border: 0;
+          background: transparent;
+          /* padding: 2px 5px; */
+          font-size: 16px;
+          color: #1a776f;
+          border-radius: 2px;
+          position: absolute;
+          top: -6px;
+          right: -28px;
+        }
+      }
+      .input-container {
+        position: relative;
+      }
+      .eye {
+        border: 0;
+        background: 0;
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+      }
+    }
+  }
+}
