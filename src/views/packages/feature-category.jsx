@@ -232,6 +232,8 @@ const ModuleList = () => {
       },
     },
   };
+
+  
 const filteredRows = useMemo(() => {
   return data.filter((row) => {
     const rowName = row?.name?.toLowerCase() || "";     // fallback empty string
