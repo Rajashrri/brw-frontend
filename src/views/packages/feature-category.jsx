@@ -232,12 +232,13 @@ const ModuleList = () => {
       },
     },
   };
-
-  const filteredRows = useMemo(() => {
-    return data.filter((row) =>
-      row.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  }, [searchTerm, data]);
+const filteredRows = useMemo(() => {
+  return data.filter((row) => {
+    const rowName = row?.name?.toLowerCase() || "";     // fallback empty string
+    const search = searchTerm?.toLowerCase() || "";     // fallback empty string
+    return rowName.includes(search);
+  });
+}, [searchTerm, data]);
 
   const handlemodal = () => {
     setShow1(true)
