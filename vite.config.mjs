@@ -4,44 +4,24 @@ import jsconfigPaths from 'vite-jsconfig-paths';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
-  const API_URL = `${env.VITE_APP_BASE_NAME}`;
-  const PORT = `${'3000'}`;
+  const API_URL = env.VITE_APP_BASE_NAME || '/'; // fallback to root
+  const PORT = 3000; // number
 
   return {
     server: {
-      // this ensures that the browser opens upon server start
       open: true,
-      // this sets a default port to 3000
-      port: PORT
+      port: PORT,
     },
     define: {
-      global: 'window'
+      global: 'window',
     },
     resolve: {
-      alias: [
-        // { find: '', replacement: path.resolve(__dirname, 'src') },
-        // {
-        //   find: /^~(.+)/,
-        //   replacement: path.join(process.cwd(), 'node_modules/$1')
-        // },
-        // {
-        //   find: /^src(.+)/,
-        //   replacement: path.join(process.cwd(), 'src/$1')
-        // }
-        // {
-        //   find: 'assets',
-        //   replacement: path.join(process.cwd(), 'src/assets')
-        // },
-      ]
+      alias: [],
     },
     css: {
       preprocessorOptions: {
-        scss: {
-          charset: false
-        },
-        less: {
-          charset: false
-        }
+        scss: { charset: false },
+        less: { charset: false },
       },
       charset: false,
       postcss: {
@@ -49,22 +29,14 @@ export default defineConfig(({ mode }) => {
           {
             postcssPlugin: 'internal:charset-removal',
             AtRule: {
-              charset: (atRule) => {
-                if (atRule.name === 'charset') {
-                  atRule.remove();
-                }
-              }
-            }
-          }
-        ]
-      }
+              charset: (atRule) => atRule.remove(),
+            },
+          },
+        ],
+      },
     },
-    base: API_URL,
+    base: API_URL, // '/' if deploying at root, '/subfolder/' if deploying under subfolder
     plugins: [react(), jsconfigPaths()],
-    experimental: {
- 	 renderBuiltUrl(filename, { hostId, hostType, type }) {
-  	 return `${env.PUBLIC_URL}/` + filename
-	 }
-    }
+    // Removed experimental.renderBuiltUrl entirely
   };
 });
