@@ -132,7 +132,7 @@ const CreateNewProject = () => {
                   <div className="overlay">
                     <div className="button">
                       <a
-                        href="http://localhost:3001/auth/signin"
+                        href="https://brw-admin-eight.vercel.app"
                         target="_blank"
                         className="create-button btn btn-primary waves-effect waves-light"
                       >
@@ -146,7 +146,7 @@ const CreateNewProject = () => {
                     {val.compname}{" "}
                     <div>
                       <a
-                        href="http://localhost:3001/auth/signin"
+                        href="https://brw-admin-eight.vercel.app"
                         target="_blank"
                         style={{ float: "right" }}
                         className="view-color"
